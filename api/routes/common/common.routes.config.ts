@@ -1,10 +1,10 @@
-import { Express} from "express";
+import e from "express";
 
 export abstract class CommonRoutesConfig {
-    app: Express.Application;
+    app: e.Application;
     name: string;
 
-    constructor(app: Express.Application, name: string){
+    constructor(app: e.Application, name: string){
         this.app = app;
         this.name = name;
     }

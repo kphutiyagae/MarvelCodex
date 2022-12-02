@@ -1,12 +1,12 @@
 import { CommonRoutesConfig } from "../common/common.routes.config";
-import { Express } from "express";
+import e from "express";
 
 export class EventsRoutes extends CommonRoutesConfig {
-    constructor(app: Express.Application) {
+    constructor(app: e.Application) {
         super(app, 'EventsRoutes');
     }
 
-    configureRoutes(): Express.Application {
+    configureRoutes(): e.Application {
         return this.app;
     }
 }
